@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <title>calculator</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="input"><input ></div>
+            <ul>
+                <li><button class="num"  onclick="clearnum()">Ac</button></li>
+            </ul>
+            <ul>
+                <li><button class="num" value="7"onclick="updatevalue(value)">7</button></li>
+                <li><button class="num" value="8"onclick="updatevalue(value)">8</button></li>
+                <li><button class="num"  value="9"onclick="updatevalue(value)">9</button></li>
+                <li><button class="num"  id="operator" data-num="*" onclick="operator(event)">x</button></li>
+            </ul>
+            <ul>
+                <li><button class="num"  value="4"onclick="updatevalue(value)">4</button></li>
+                <li><button class="num"  value="5"onclick="updatevalue(value)">5</button></li>
+                <li><button class="num"  value="6"onclick="updatevalue(value)">6</button></li>
+                <li><button class="num" id="operator" data-num="-" onclick="operator(event)" >-</button></li>
+            </ul>
+            <ul>
+                <li><button class="num"  value="1" onclick="updatevalue(value)">1</button></li>
+                <li><button class="num" value="2" onclick="updatevalue(value)">2</button></li>
+                <li><button class="num" value="3"onclick="updatevalue(value)">3</button></li>
+                <li><button class="num" id="operator" data-num="+" onclick="operator(event)">+</button></li>
+            </ul>
+            <ul>
+                <li><button class="num" value="0" onclick="updatevalue(value)">0</button></li>
+                <li><button class="num"  value="." onclick="updatevalue(value)">.</button></li>
+                <li><button class="num" id="operator" data-num="/" onclick="operator(event)">/</button></li>
+                <li><button class="num" id="operator" onclick="calculator()">=</button></li>
+            </ul>
+        </div>
+    </body>
+    <script src="./main.js"></script>
+</html>
